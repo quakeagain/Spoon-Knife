@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="zh">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Spoon-Knife</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8" />
+  <title>我的第一个应用 - 拿来主义 Demo</title>
+  <link href="styles.css" rel="stylesheet" />
 </head>
-
 <body>
-
-<img src="forkit.gif" id="octocat" alt="" />
-
-<!-- Feel free to change this text here -->
-<p>
-  Fork me? Fork you, @octocat!
-</p>
-
+  <div class="card">
+    <h1>👋 你好，这是我的应用</h1>
+    <p class="subtitle">改编自 GitHub 官方示例 octocat/Spoon-Knife</p>
+    <p class="desc">
+      原版只是一张图加一句话。我把它改成了带交互的小应用——
+      这就是"拿来主义"：站在别人的肩膀上，快速做出自己的东西。
+    </p>
+    <button id="btn">点我一下</button>
+    <p class="count">你已经点了 <span id="num">0</span> 次</p>
+  </div>
+  <script>
+    let n = 0;
+    const btn = document.getElementById('btn');
+    const num = document.getElementById('num');
+    btn.addEventListener('click', function () {
+      n = n + 1;
+      num.textContent = n;
+    });
+  </script>
 </body>
 </html>

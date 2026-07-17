@@ -1,17 +1,61 @@
 * {
-  margin:0px;
-  padding:0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#octocat {
-  display: block;
-  width:384px;
-  margin: 50px auto;
+body {
+  font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  background: #26215C;
+  color: #FFFFFF;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-p {
-  display: block;
-  width: 400px;
-  margin: 50px auto;
-  font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+.card {
+  background: #3C3489;
+  padding: 40px 48px;
+  border-radius: 16px;
+  max-width: 520px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.desc {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  opacity: 0.92;
+}
+
+button {
+  background: #7F77DD;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #534AB7;
+}
+
+.count {
+  margin-top: 16px;
+  font-size: 14px;
+  opacity: 0.85;
 }
